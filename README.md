@@ -166,3 +166,75 @@ Bei Fragen oder Problemen bitte ein Issue erstellen.
 ---
 
 **Hinweis:** Beim ersten Build werden alle Dependencies heruntergeladen, was einige Minuten dauern kann.
+
+## 📸 Screenshots
+
+### Desktop Anwendung
+
+![Training Dashboard](https://raw.githubusercontent.com/ThePatrickRenges/training-dashboard/main/screenshots/dashboard.png)
+
+**Features im Screenshot:**
+- 📊 **Statistik-Dashboard** - Übersicht über alle Trainings (Gesamt, Aktuell, Bald fällig, Überfällig)
+- ➕ **Neuen Eintrag anlegen** - Formular zum Hinzufügen von Mitarbeiter-Schulungen
+- 📋 **Übersicht** - Tabellarische Darstellung aller Einträge
+- 🔍 **Suche & Filter** - Filtern nach kritischen Einträgen (Gelb/Rot)
+- 🔄 **Echtzeit-Synchronisation** - Automatische Aktualisierung vom Backend
+- 🟢🟡🔴 **Farbcodierte Status** - Visuelles Status-Tracking
+
+### Backend Terminal
+
+Das Backend läuft als REST API Server und speichert alle Daten in einer CSV-Datei:
+```
+╔════════════════════════════════════════╗
+║   Training Dashboard Backend          ║
+║   CSV-Datenbank Backend                ║
+╚════════════════════════════════════════╝
+
+🚀 Server startet auf http://127.0.0.1:8080
+📁 CSV-Datei: employees.csv
+```
+
+### Native Desktop GUI
+
+Die Anwendung nutzt **egui/eframe** für eine native Desktop-Erfahrung:
+- ✅ Läuft auf Windows, macOS und Linux
+- ✅ Keine Webbrowser erforderlich
+- ✅ Schnelle Performance
+- ✅ Natives Look & Feel
+
+
+## 📸 Screenshots
+
+### Desktop Anwendung
+
+![Training Dashboard](https://raw.githubusercontent.com/ThePatrickRenges/training-dashboard/main/screenshots/dashboard.png)
+
+**Features im Screenshot:**
+- 📊 **Statistik-Dashboard** - Übersicht über alle Trainings (Gesamt, Aktuell, Bald fällig, Überfällig)
+- ➕ **Neuen Eintrag anlegen** - Formular zum Hinzufügen von Mitarbeiter-Schulungen
+- 📋 **Übersicht** - Tabellarische Darstellung aller Einträge
+- 🔍 **Suche & Filter** - Filtern nach kritischen Einträgen (Gelb/Rot)
+- 🔄 **Echtzeit-Synchronisation** - Automatische Aktualisierung vom Backend
+- 🟢🟡🔴 **Farbcodierte Status** - Visuelles Status-Tracking
+
+### Backend Terminal
+
+Das Backend läuft als REST API Server und speichert alle Daten in einer CSV-Datei:
+```
+╔════════════════════════════════════════╗
+║   Training Dashboard Backend          ║
+║   CSV-Datenbank Backend                ║
+╚════════════════════════════════════════╝
+
+🚀 Server startet auf http://127.0.0.1:8080
+📁 CSV-Datei: employees.csv
+```
+
+### Native Desktop GUI
+
+Die Anwendung nutzt **egui/eframe** für eine native Desktop-Erfahrung:
+- ✅ Läuft auf Windows, macOS und Linux
+- ✅ Keine Webbrowser erforderlich
+- ✅ Schnelle Performance
+- ✅ Natives Look & Feel
+
