@@ -238,3 +238,66 @@ Die Anwendung nutzt **egui/eframe** für eine native Desktop-Erfahrung:
 - ✅ Schnelle Performance
 - ✅ Natives Look & Feel
 
+
+## 🆕 Version 2.0 - Admin Dashboard
+
+### Neue Features
+
+#### 🔐 Authentifizierung & Berechtigungen
+- **Login-System** mit Token-basierter Authentifizierung
+- **3 Benutzerrollen**: Administrator, Manager, Benutzer
+- **Session-Management** mit sicheren Tokens
+
+#### 👥 Benutzerverwaltung
+- Benutzer erstellen, bearbeiten, löschen
+- Rollen zuweisen (Admin, Manager, User)
+- Benutzer aktivieren/deaktivieren
+- Passwort-Hashing mit bcrypt
+
+#### 📊 Admin-Dashboard
+- **Hamburger-Menü** für Navigation
+- Benutzer-Übersicht mit Rollenverwaltung
+- Berechtigungssystem
+- Aktivitäts-Tracking (wer hat was erstellt)
+
+### Berechtigungen
+
+| Berechtigung | Admin | Manager | User |
+|--------------|-------|---------|------|
+| Benutzer erstellen/löschen | ✅ | ❌ | ❌ |
+| Benutzer bearbeiten | ✅ | ❌ | ❌ |
+| Schulungen löschen | ✅ | ✅ | ❌ |
+| Schulungen bearbeiten | ✅ | ✅ | ✅ |
+| Schulungen erstellen | ✅ | ✅ | ✅ |
+| Schulungen ansehen | ✅ | ✅ | ✅ |
+
+### Standard-Login
+
+Bei der ersten Installation wird automatisch ein Admin-Account erstellt:
+
+- **Benutzername:** `admin`
+- **Passwort:** `admin123`
+
+⚠️ **Wichtig:** Bitte ändern Sie das Passwort nach dem ersten Login!
+
+### Neue API-Endpunkte
+
+#### Authentifizierung
+- `POST /api/auth/login` - Login
+- `POST /api/auth/logout` - Logout
+- `GET /api/auth/me` - Aktueller Benutzer
+
+#### Benutzerverwaltung (nur Admin)
+- `GET /api/users` - Alle Benutzer auflisten
+- `POST /api/users` - Benutzer erstellen
+- `PUT /api/users/{id}` - Benutzer aktualisieren
+- `DELETE /api/users/{id}` - Benutzer löschen
+
+### Sicherheit
+
+- ✅ Passwörter werden mit bcrypt gehasht
+- ✅ Token-basierte Authentifizierung
+- ✅ Rollenbasierte Zugriffskontrolle (RBAC)
+- ✅ Session-Management
+- ✅ CORS-Konfiguration
+
