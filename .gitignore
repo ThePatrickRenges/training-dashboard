@@ -1,0 +1,20 @@
+# Rust
+target/
+Cargo.lock
+
+# CSV Datenbank (optional - auskommentieren wenn du CSV hochladen willst)
+backend/employees.csv
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
